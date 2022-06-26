@@ -12,6 +12,7 @@ learn_inf = load_learner('model.pkl')
 class Predict:
     def __init__(self, filename):
         st.title('Sprawdź gatunek swojego grzyba!')
+        st.image('https://cotozachoroba.pl/wp-content/uploads/2020/09/Grzyby-jadalne.jpg')
         self.learn_inference = load_learner(Path()/filename)
         self.img = self.get_image_from_upload()
         if self.img is not None:
@@ -49,15 +50,14 @@ class Predict:
             if (pred == 'Lactarius deliciosus'):
                 st.subheader(f'**Predykcja**: {pred}')
                 st.subheader(f'**Prawdopodobieństwo**: {probs[pred_idx]*100:.02f}%')
-                st.write('Mleczaj rydz jest grzybem jadalnym. Uważany za jeden ze smaczniejszych grzybów. W Polsce jest pospolity.')
+                st.write('Mleczaj rydz jest grzybem jadalnym. Uważany za jeden ze smaczniejszych grzybów.')
+                st.write('W Polsce jest pospolity.')
                 st.write('https://www.ekologia.pl/wiedza/grzyby/mleczaj-rydz')
             if (pred=='Russula sanguinea'):
                 st.subheader(f'**Predykcja**: {pred}')
                 st.subheader(f'**Prawdopodobieństwo**: {probs[pred_idx]*100:.02f}%')
-                st.write('Gołąbek krwisty należy do grzybów mikoryzowych, które wchodzą w symbiozę z roślinami.')
-                st.write('Strzępki grzyba wnikają w komórki miękiszu kory pierwotnej korzeni rośliny.')
-                st.write('Grzyb w tym oddziaływaniu przekazuje roślinie sole mineralne i wodę z witaminami.')
-                st.write('Natomiast od rośliny pobiera niezbędne do rozwoju węglowodany.')
+                st.write('Gołąbek krwisty należy do grzybów mikoryzowych, które wchodzą w symbiozę z roślinami. Strzępki grzyba wnikają w komórki miękiszu kory pierwotnej korzeni rośliny.')
+                st.write('Grzyb w tym oddziaływaniu przekazuje roślinie sole mineralne i wodę z witaminami. Natomiast od rośliny pobiera niezbędne do rozwoju węglowodany.')
                 st.write('Ze względu na swój cierpki smak uznaje się go za gatunek niejadalny.')
                 st.write('https://www.ekologia.pl/wiedza/grzyby/golabek-krwisty')
             if(pred =='Cortinarius cinnamomeus'):
