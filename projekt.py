@@ -85,7 +85,7 @@ class Predict:
                 st.write('Muchomor czerwony, zwany bedłką lub muchomorem pospolitym, to najsłynniejszy gatunek grzybów z rodziny muchomorowatych.')
                 st.write(' Miąższ tego grzyba kryje w sobie substancje o właściwościach toksycznych.')
                 st.write('https://www.ekologia.pl/srodowisko/przyroda/muchomor-czerwony-opis-wystepowanie-i-zdjecia-grzyb-muchomor-czerwony-ciekawostki,23511.html')
-            if(pred=='Rubroboletus satanas')
+            if(pred=='Rubroboletus satanas'):
                 st.write(f'**Predykcja**: {pred}')
                 st.write(f'**Prawdopodobieństwo**: {probs[pred_idx]*100:.02f}%')
                 st.write('Borowik szatański, zwany diablikiem, szatanem, smoczym łbem lub trucicielem, jest toksycznym gatunkiem grzybów należących do rodziny borowikowatych.')
