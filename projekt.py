@@ -112,6 +112,8 @@ class Predict:
                 st.write('Spróbuj ponownie!')
         else: 
             st.write(f'Kliknij aby sklasyfikować') 
+            st.header(' ')
+            st.subheader('NIE KIEROWAĆ SIĘ KLASYFIKAJCĄ APLIKACJI PRZY SPOŻYCIU!!!')
 
 if __name__=='__main__':
 
