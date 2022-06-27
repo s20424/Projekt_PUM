@@ -111,7 +111,7 @@ class Predict:
                 st.write('Nie udało się rozpoznać grzyba na zdjęciu!')
                 st.write('Spróbuj ponownie!')
             st.header(' ')
-            st.subheader('NIE KIEROWAĆ SIĘ KLASYFIKAJCĄ APLIKACJI PRZY SPOŻYCIU!!!')
+            st.subheader('UWAGA: NIE NALEŻY KIEROWAĆ SIĘ KLASYFIKAJCĄ APLIKACJI PRZY SPOŻYCIU!!!')
         else: 
             st.write(f'Kliknij aby sklasyfikować') 
            
