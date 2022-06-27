@@ -50,7 +50,7 @@ class Predict:
             if (pred == 'Lactarius deliciosus'):
                 st.subheader(f'**Predykcja**: {pred}')
                 st.subheader(f'**Prawdopodobieństwo**: {probs[pred_idx]*100:.02f}%')
-                st.write('Mleczaj rydz jest grzybem jadalnym. Uważany za jeden ze smaczniejszych grzybów.')
+                st.write('Mleczaj rydz jest grzybem jadalnym. Uważany jest za jeden ze smaczniejszych grzybów.')
                 st.write('W Polsce jest pospolity.')
                 st.write('https://www.ekologia.pl/wiedza/grzyby/mleczaj-rydz')
             if (pred=='Russula sanguinea'):
@@ -108,7 +108,8 @@ class Predict:
                 st.write('https://www.ekologia.pl/srodowisko/przyroda/podgrzybek-brunatny-opis-wystepowanie-i-zdjecia-grzyb-podgrzybek-brunatny-ciekawostki,23382.html')
             if (pred =='Random'):
                 st.subheader('**Predykcja**: Nieznany')
-                st.write('Nie udało się rozpoznać grzyba na zdjęciu')
+                st.write('Nie udało się rozpoznać grzyba na zdjęciu!')
+                st.write('Spróbuj ponownie!')
         else: 
             st.write(f'Kliknij aby sklasyfikować') 
 
